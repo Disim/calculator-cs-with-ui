@@ -153,9 +153,8 @@
             this.label21.ForeColor = System.Drawing.Color.IndianRed;
             this.label21.Location = new System.Drawing.Point(12, 14);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(232, 30);
+            this.label21.Size = new System.Drawing.Size(0, 30);
             this.label21.TabIndex = 46;
-            this.label21.Text = "Действия не найдено";
             // 
             // label23
             // 
@@ -163,9 +162,8 @@
             this.label23.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label23.Location = new System.Drawing.Point(12, 134);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(97, 60);
+            this.label23.Size = new System.Drawing.Size(0, 60);
             this.label23.TabIndex = 50;
-            this.label23.Text = "123";
             // 
             // label24
             // 
@@ -173,9 +171,8 @@
             this.label24.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label24.Location = new System.Drawing.Point(12, 194);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(122, 74);
+            this.label24.Size = new System.Drawing.Size(0, 74);
             this.label24.TabIndex = 47;
-            this.label24.Text = "123";
             // 
             // label22
             // 
@@ -184,10 +181,10 @@
             this.label22.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label22.Location = new System.Drawing.Point(12, 44);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(411, 90);
+            this.label22.Size = new System.Drawing.Size(401, 90);
             this.label22.TabIndex = 49;
-            this.label22.Text = "Поговорим про аквариумы.\r\nВведите высоту и ширину через Enter. \r\nЧтобы закончить " +
-    "ввод нажмите Done.";
+            this.label22.Text = "Поговорим про аквариумы.\r\nВведите высоту \r\nЧтобы закончить ввод нажмите Done.";
+            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // tabPage3
             // 
@@ -210,9 +207,8 @@
             this.label31.ForeColor = System.Drawing.Color.IndianRed;
             this.label31.Location = new System.Drawing.Point(12, 14);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(232, 30);
+            this.label31.Size = new System.Drawing.Size(0, 30);
             this.label31.TabIndex = 28;
-            this.label31.Text = "Действия не найдено";
             // 
             // label33
             // 
@@ -220,9 +216,9 @@
             this.label33.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label33.Location = new System.Drawing.Point(12, 134);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(97, 60);
+            this.label33.Size = new System.Drawing.Size(0, 60);
             this.label33.TabIndex = 32;
-            this.label33.Text = "123";
+            this.label33.Click += new System.EventHandler(this.label33_Click);
             // 
             // label34
             // 
@@ -230,9 +226,8 @@
             this.label34.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label34.Location = new System.Drawing.Point(12, 194);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(122, 74);
+            this.label34.Size = new System.Drawing.Size(0, 74);
             this.label34.TabIndex = 29;
-            this.label34.Text = "123";
             // 
             // label32
             // 
@@ -241,10 +236,11 @@
             this.label32.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label32.Location = new System.Drawing.Point(12, 44);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(411, 90);
+            this.label32.Size = new System.Drawing.Size(423, 90);
             this.label32.TabIndex = 31;
-            this.label32.Text = "Поговорим про аквариумы.\r\nВведите высоту и ширину через Enter. \r\nЧтобы закончить " +
-    "ввод нажмите Done.";
+            this.label32.Text = "Если вам нужно ввести высоту,\r\nто введите число и нажмите Enter.\r\nПосле введите ш" +
+    "ирину и нажмите Done";
+            this.label32.Click += new System.EventHandler(this.label32_Click);
             // 
             // done
             // 
@@ -256,6 +252,7 @@
             this.done.TabIndex = 44;
             this.done.Text = "Done";
             this.done.UseVisualStyleBackColor = false;
+            this.done.Click += new System.EventHandler(this.done_Click_1);
             // 
             // enter
             // 
@@ -267,6 +264,7 @@
             this.enter.TabIndex = 43;
             this.enter.Text = "Enter";
             this.enter.UseVisualStyleBackColor = false;
+            this.enter.Click += new System.EventHandler(this.enter_Click_1);
             // 
             // dot
             // 

@@ -22,6 +22,8 @@ namespace Calculator
 
         }
 
+        int? height, width, length;
+
         void clickCnopochka(Button obj)
         {
             Label errorLabel;
@@ -55,13 +57,62 @@ namespace Calculator
                 
                 case "Enter":
                     {
-                        currentLabel.Text = "Ну да и что";
+                        if (tabControl1.SelectedIndex == 0)
+                        {
+                            label11.Text = "Нет комманды";
+                        }
+                        else if (tabControl1.SelectedIndex == 1)
+                        {
+                            label21.Text = "Нет комманды";
+                            //Class1 start = new Class1(label24, label21, label22);
+                        }
+                        else
+                        {
+                            if(label34.Text != "")
+                            {
+                                height = Convert.ToInt32(label34.Text);
+                                label33.Text = "Высота: " + label34.Text;
+                                label34.Text = "";
+                            }
+                            //Class1 start = new Class1(label24, label21, label22);
+                        }
                         //Class1 start = new Class1(errorLabel, printLabel);
                         break;
                     }
                 case "Done":
                     {
-                        currentLabel.Text = "Дан";
+                        if (tabControl1.SelectedIndex == 0)
+                        {
+                            Class1 start = new Class1(label14, label11, label12);
+                        }
+                        else if (tabControl1.SelectedIndex == 1)
+                        {
+                            if(label24.Text.Length > 0)
+                            {
+                                height = Convert.ToInt32(label24.Text);
+                                label33.Text = "Высота: " + height;
+                                Class1 start = new Class1(label24, label21, label22, Convert.ToInt32(label24.Text));
+                                label21.Text = "";
+                            }
+                            else
+                            {
+                                label21.Text = "Введите данные";
+                            }
+                        }
+                        else
+                        {
+                            if (height != null && label34.Text.Length > 0)
+                            {
+                                label31.Text = "";
+                                Class1 start = new Class1(label34, label31, label32, height ?? 0, Convert.ToInt32(label34.Text));
+                            }
+                            else
+                            {
+                                label31.Text = "Вы ввели не все данные";
+                            }
+                            
+                        }
+                        
                         break;
                     }
                 case ",":
@@ -180,6 +231,31 @@ namespace Calculator
         private void button9_Click(object sender, EventArgs e)
         {
             clickCnopochka(button9);
+        }
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void done_Click_1(object sender, EventArgs e)
+        {
+            clickCnopochka(done);
+        }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void enter_Click_1(object sender, EventArgs e)
+        {
+            clickCnopochka(enter);
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void label3_Click(object sender, EventArgs e)
